@@ -26,7 +26,7 @@ jobs:
       with:
         python-version: '3.13'
     - name: Install all necessary packages
-      run: pip install jupyter lxml pandas requests beautifulsoup4 html5lib
+      run: pip install jupyter ipykernel lxml pandas requests beautifulsoup4 html5lib
     - name: Scraping today's data
       run: jupyter nbconvert --to notebook --execute "Homework-07-lemonde-attempt2.ipynb" --stdout
     - name: Commit and push any changes
